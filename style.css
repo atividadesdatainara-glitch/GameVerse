@@ -1,0 +1,29 @@
+.card img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.card{
+    transition: .3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+
+#carrossel {
+    margin-top: 80px;
+    margin-bottom: 80px ;
+}
+
+
+footer {
+    position: relative;
+    margin-top: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
