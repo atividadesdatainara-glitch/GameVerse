@@ -31,7 +31,7 @@ function cadastrar() {
             "Olá, " + nome + "!\n" +
             "E-mail: " + email + "\n\n" +
             "Parabéns! Você já pode solicitar sua CNH.\n\n" +
-            "Como prêmio da loja, você ganhou um voucher promocional relacionado ao processo de habilitação, válido em compras acima de R$ 1.000."
+            "Como prêmio da loja, você ganhou um voucher promocional relacionado ao processo de habilitação, válido em compras acima de R$ 100,00."
         );
     } 
     else {
@@ -39,7 +39,7 @@ function cadastrar() {
             "Olá, " + nome + "!\n" +
             "E-mail: " + email + "\n\n" +
             "Infelizmente você ainda não pode solicitar sua CNH.\n\n" +
-            "Você ganhou um cupom de 30%."
+            "Você ganhou um cupom de 10%."
         );
     }
 }
