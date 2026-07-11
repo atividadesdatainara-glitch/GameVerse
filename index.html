@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Verse</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+        <!--Header / Sthefanny--> 
+<header class="container-fluid bg-primary text-white p-4">
+    <div class="container">
+        <h1 class="mb-0">Espaço para logo</h1>
+        <p class="mb-0">Nome da loja</p>
+    </div>
+</header> 
+
+    <!--Menu lateral Adriel / Kauã-->
+<button class="btn btn-primary m-3" type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#menuLateral">
+    ☰ Menu
+</button>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Game Verse</h5>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas"></button>
+    </div>
+
+<div class="offcanvas-body">
+    <div class="list-group">
+
+        <a href="#" class="list-group-item list-group-item-action">
+            <img src="gifs_menu_lateral/home.gif" width="24" height="24" class="me-2">
+            Home
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action">
+            <img src="gifs_menu_lateral/categoria.gif" width="24" height="24" class="me-2">
+            Categoria
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action">
+            <img src="gifs_menu_lateral/carrinho.gif" width="24" height="24" class="me-2">
+            Carrinho
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action">
+            <img src="gifs_menu_lateral/notificação.gif" width="24" height="24" class="me-2">
+            Notificações
+        </a>
+
+        <a href="#" class="list-group-item list-group-item-action">
+            <img src="gifs_menu_lateral/perfil.gif" width="24" height="24" class="me-2">
+            Perfil
+        </a>
+
+        </div>
+    </div>
+</div>
+
+<!--Formulario Kauã/Adriel -->
+<div class="container mt-4">
+    <div class="row">
+<div class="col-md-6"> 
+    <h2>Formulário</h2>
+    <p>Preencha o formulário abaixo para se cadastrar:</p>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required><br><br>
+        <label for="idade">Data de nascimento:</label>
+        <input type="date" id="idade" required><br><br>
+        <button type="button" onclick="cadastrar()">
+        Cadastrar
+        </button>
+    </form> 
+    </div>
+
+    <!--Mega Promoção-->
+    <div class="col-md-6"> 
+        <h2>Mega Promoção</h2>
+        <p>Confira nossas promoções:</p>
+    </div>
+
+    </div>
+</div>
+
+
+<!--Rodapé Kauã-->
+<footer class="bg-dark text-white text-center p-3 fixed-bottom">
+    <p class="mb-0">
+        Game Verse — Todos os direitos reservados &copy; 2026
+    </p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
