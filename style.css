@@ -27,3 +27,24 @@ footer {
 .carousel-control-next-icon {
     filter: invert(1);
 }
+
+/* Tainara*/
+
+/*Header*/
+.game-color{
+     background: linear-gradient(to right, 
+      #9ebee4,
+      #122a54 70%);
+}
+/*Logo*/
+.logo-game{
+    width: 220px;
+    height: 130px;
+}
+
+/* Botoes*/
+
+.game-botao:hover{
+    background-color: #3a12aa;
+    border-color: #9ebee4;
+}
