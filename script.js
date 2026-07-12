@@ -12,6 +12,7 @@ function cadastrar() {
         return;
     }
 
+    
     // Calcular idade
     const nascimento = new Date(dataNascimento);
     const hoje = new Date();
