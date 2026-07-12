@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Verse</title>
+    <link rel="icon" href="logo/favicon.ico" type="favicon">
+     <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #f3f4f5;">
+
+<body class="fundo_pagina">
+
+    <!-- Tela de abertura -->
+<div id="abertura">
+    <img src="logo/logo6.png" class="frase_abertura logo-abertura" onclick="entrarSite()">
+    <p>Game Verse: Infinitos jogos. Um só universo.</p>
+</div>
+
+
         <!--Header Sthefanny/Taynara--> 
 <header class="container-fluid game-color text-white p-4">
 
     <div class="container">
-        <div class="row align-items-center">
             <!-- Logo -->
              <div class="row align-items-center">
 
@@ -25,14 +37,18 @@
             </div>
                 <!-- Barra de pesquisa-->
             <div class="col-md-7">
-                <input
-                    type="search"
-                    class="form-control"
-                    placeholder="Pesquisar produtos..."
-                    
-                >
+                <div class="input-group">
+                    <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Pesquisar produtos..."
+                    >
+                    <span class="input-group-text">
+                        &#128270;
+                    </span>
+                </div>
+
             </div>
-        </div>
     </div>
 </header> 
 
@@ -44,12 +60,13 @@
 </button> 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title">Game Verse</h5>
+        <h3 class="offcanvas-title">Game Verse</h3>
         <button type="button" class="btn-close"
-                data-bs-dismiss="offcanvas"></button>
+            data-bs-dismiss="offcanvas">
+        </button>
     </div>
 
-<div class="offcanvas-body">
+<div class="offcanvas-body fundo_menu">
     <div class="list-group">
 
         <a href="#" class="list-group-item list-group-item-action">
@@ -81,25 +98,35 @@
     </div>
 </div>
 
-<!--Formulario Kauã/Adriel -->
-<div class="container mt-4">
+<!--Formulario Kauã/Adriel/Sthefanny -->
+<div class="fonte_formulario fundo_formulario container p-3 mt-3 border rounded-4 border-3">
     <div class="row justify-content-center">
-<div class="col-md-5"> 
-    <h2>Formulário</h2>
+<div class="col-md-5 border-end border-3 pe-4">
+    <div class="p-4"></div>
+    <h2>FORMULÁRIO </h2>
     <p>Preencha o formulário abaixo para ganhar uma promoção:</p>
     <form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" required>
+        <input type="text" id="nome" class="form-control rounded-4" required placeholder="Ex: Manuel Gonçalves"><br>
         <label for="email">E-mail:</label>
-        <input type="email" id="email" required><br><br>
+        <input type="email" id="email" class="form-control rounded-4" required placeholder="Ex: manuelgames@gmail.com" ><br>
         <label for="idade">Data de nascimento:</label>
-        <input type="date" id="idade" required><br><br>
-        <button type="button" onclick="cadastrar()">
+        <input type="date" id="idade" class="form-control rounded-4" required><br>
+        <button class="btn btn-primary" type="button" onclick="cadastrar()">
         Cadastrar
         </button>
     </form> 
     </div>
+  
+<div class="col-md-5 ps-4">
+    <div class="p-4"></div>
+    <h2>PROMOÇÃO</h2>
+    <h5>🎉 Garanta seu desconto exclusivo! </h5> <br>
+    <p>Você está a poucos segundos de aproveitar uma promoção especial preparada para você.</p>
+    </p> Preencha o formulário ao lado com seus dados e garantir sua oferta.</p>
+    
     </div>
+</div>
 </div>
 
 <!--Carrossel Eduardo/Riquelme--> 
@@ -139,7 +166,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Elden Ring</h5>
                                 
-                                <h4 class="text-success fw-bold">R$ 380,00</h4>
+                                <h4 class="text-success fw-bold">R$ 259,90</h4>
                                 
                                 <a href="#" class="btn btn-primary">Comprar</a>
                             </div>
@@ -152,7 +179,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Crimson Desert</h5>
                                 
-                                <h4 class="text-success fw-bold">R$ 380,00</h4>
+                                <h4 class="text-success fw-bold">R$ 299,90</h4>
                                 
                                 <a href="#" class="btn btn-primary">Comprar</a>
                             </div>
@@ -187,7 +214,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Resident Evil 4 - REMAKE</h5>
 
-                                <h4 class="text-success fw-bold">R$ 200,00</h4>
+                                <h4 class="text-success fw-bold">R$ 149,99</h4>
                         
                                 <a href="#" class="btn btn-primary">Comprar</a>
                             </div>
@@ -213,7 +240,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">God Of War</h5>
 
-                                <h4 class="text-success fw-bold">R$ 380,00</h4>
+                                <h4 class="text-success fw-bold">R$ 179,00</h4>
 
                                 <a href="#" class="btn btn-primary">Comprar</a>
                             </div>
@@ -235,7 +262,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Marvel's Spider-Man: Miles Morales</h5>
                                 
-                                <h4 class="text-success fw-bold">R$ 200</h4>
+                                <h4 class="text-success fw-bold">R$ 200,00</h4>
                                 
                                 <a href="#" class="btn btn-primary">Comprar</a>
                             </div>
@@ -298,11 +325,11 @@
     </button>
 </div>
 
-<!--Rodapé Kauã-->
-<footer class="bg-dark text-white text-center p-3 mt-5 fixed-bottom">
-    <p class="mb-0">
-        Game Verse — Todos os direitos reservados &copy; 2026
-    </p>
+<!--Rodapé Kauã/Sthefanny-->
+<footer class="bg-dark text-white text-center p-3 mt-4">
+    <div class="container">
+        <p class="m-0">Game Verse — Todos os direitos reservados © 2026</p>
+    </div>
 </footer>
 
 

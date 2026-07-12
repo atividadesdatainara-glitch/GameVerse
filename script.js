@@ -4,7 +4,6 @@ function cadastrar() {
     const nome = document.getElementById("nome").value.trim();
     const email = document.getElementById("email").value.trim();
     const dataNascimento = document.getElementById("idade").value;
-    const saida = document.getElementById("saida");
 
     // Verificar se os campos estão preenchidos
     if (nome === "" || email === "" || dataNascimento === "") {
@@ -16,6 +15,12 @@ function cadastrar() {
     // Calcular idade
     const nascimento = new Date(dataNascimento);
     const hoje = new Date();
+    const regexNome = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
+
+    if (!regexNome.test(nome)) {
+        alert("Digite um nome válido.");
+        return;
+    }
 
     let idade = hoje.getFullYear() - nascimento.getFullYear();
 
@@ -26,7 +31,7 @@ function cadastrar() {
     }
 
     // Mostrar mensagem
-    if (idade >= 18) {
+    if (!Number.isInteger(idade) || idade >= 18 || idade > 90) {
         alert(
             "PARABÉNS!\n\n" +
             "Olá, " + nome + "!\n" +
@@ -43,4 +48,8 @@ function cadastrar() {
             "Você ganhou um cupom de 10%."
         );
     }
+}
+
+function entrarSite(){
+    document.getElementById("abertura").style.display = "none";
 }
